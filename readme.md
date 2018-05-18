@@ -16,6 +16,20 @@
 
 * [Gulp]("https://gulpjs.com/")
 
+## Features 
+
+### Sass
+* Compile Sass (Indented Version) files into CSS.
+* AutoPrefixing the output.
+* Minyfing the output.
+
+### JS
+* Minifying JS files.
+* Writing Source Map.
+
+### HTML
+* Minifying the HTML files.
+
 
 ## Using
 
