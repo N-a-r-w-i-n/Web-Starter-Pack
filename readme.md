@@ -30,6 +30,11 @@
 ### HTML
 * Minifying the HTML files.
 
+### Images
+* Minifying Images ([imagemin](https://www.npmjs.com/package/gulp-imagemin))
+
+### Other
+* Browser Reload ([Browser-Sync](https://www.npmjs.com/package/browser-sync))
 
 ## Using
 

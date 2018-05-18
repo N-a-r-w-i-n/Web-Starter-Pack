@@ -9,9 +9,12 @@ var gulp = require('gulp'),
     sourceMap = require('gulp-sourcemaps'),
     rename = require('gulp-rename'),
     plumber = require('gulp-plumber'),
-    uglifyJS = require('gulp-uglify');
+    uglifyJS = require('gulp-uglify'),
+    imagemin = require('gulp-imagemin');
 
 var config = {
+    imgSRC: './src/assets/images/*',
+    imgDEST: './dist/assets/images',
     sassSRC: './src/assets/sass/*.sass',
     sassDEST: './dist/assets/sass',
     jsSRC: './src/assets/javascripts/*.js',
@@ -24,7 +27,7 @@ var config = {
     htmlDEST: './dist',
 }
 
-// Performing taks like compiling sass, auto prefixing, sourcemap writting, minifying css, reloading broswer tab...
+// Performing taks like compiling sass, auto prefixing, sourcemap writting, minifying css, minifying images, reloading broswer tab...
 
 gulp.task('performActions', function() {
     gulp.src(config.sassSRC)
@@ -53,6 +56,28 @@ gulp.task('performActions', function() {
             collapseWhitespace: true
         }))
         .pipe(gulp.dest(config.htmlDEST))
+    gulp.src(config.imgSRC)
+        .pipe(imagemin([
+            imagemin.gifsicle({
+                interlaced: true
+            }),
+            imagemin.jpegtran({
+                progressive: true
+            }),
+            imagemin.optipng({
+                optimizationLevel: 5
+            }),
+            imagemin.svgo({
+                plugins: [{
+                        removeViewBox: true
+                    },
+                    {
+                        cleanupIDs: false
+                    }
+                ]
+            })
+        ]))
+        .pipe(gulp.dest(config.imgDEST))
     gulp.src(config.sassSRC)
         .pipe(plumber())
         .pipe(gulp.dest(config.sassDEST))
@@ -86,7 +111,7 @@ gulp.task('uglify', function() {
 gulp.task('browser-sync', function() {
     browserSync.init({
         server: {
-            baseDir: "./src/",
+            baseDir: "./dist/",
             files: [config.cssSRC, config.jsSRC]
         },
         // Reload the same opened tab.
