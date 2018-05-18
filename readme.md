@@ -8,13 +8,13 @@
 
 ### Platforms
 
-* [NodeJS]("https://nodejs.org/")
+* [NodeJS](https://nodejs.org/)
 
 ### Packages
 
-* [npm]("https://www.npmjs.com/")
+* [npm](https://www.npmjs.com/)
 
-* [Gulp]("https://gulpjs.com/")
+* [Gulp](https://gulpjs.com/)
 
 ## Features 
 
@@ -37,4 +37,4 @@
 
 ## License 
 
-> [MIT License]("https://raw.githubusercontent.com/N-a-r-w-i-n/Web-Starter-Pack/master/LICENSE")
+> [MIT License](https://raw.githubusercontent.com/N-a-r-w-i-n/Web-Starter-Pack/master/LICENSE)
