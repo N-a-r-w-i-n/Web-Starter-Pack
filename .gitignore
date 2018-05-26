@@ -6,6 +6,8 @@ node_modules/*
 
 dist/*
 
-# Remove .Vscode Directory
+# Remove visual studio code files
 
 .vscode
+.vscode/
+.code-workspace
