@@ -83,7 +83,6 @@ gulp.task('performActions', function() {
         .pipe(gulp.dest(config.sassDEST))
         .pipe(browserSync.stream());
 
-
 });
 
 // Minifying JS 
@@ -121,7 +120,7 @@ gulp.task('browser-sync', function() {
 
 // Task Watch.
 
-gulp.task('watch', ['browser-sync', 'performActions', 'uglify'], function() {
+gulp.task('watch', ['browser-sync', 'performActions'], function() {
 
     gulp.watch([config.sassSRC], ['performActions']);
 
