@@ -5,3 +5,7 @@ node_modules/*
 # Remove dist directory
 
 dist/*
+
+# Remove .Vscode Directory
+
+.vscode/*
