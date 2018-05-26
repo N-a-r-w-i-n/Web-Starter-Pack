@@ -42,11 +42,11 @@
 
 2. Install Node Modules by typing : 
 
-    npm install
+> npm install
 
 3. Start actions by typing : 
 
-    npm start
+> npm start
 
 4. Enjoy :100:
 
