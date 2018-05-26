@@ -8,4 +8,4 @@ dist/*
 
 # Remove .Vscode Directory
 
-.vscode/*
+.vscode
