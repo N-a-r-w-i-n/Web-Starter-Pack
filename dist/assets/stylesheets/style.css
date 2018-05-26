@@ -1,9 +1,0 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700");
-.badges {
-  text-align: center; }
-  .badges h1 {
-    color: #66CD00;
-    text-transform: capitalize;
-    font-family: "Roboto", "sans-serif"; }
-  .badges a {
-    text-decoration: none; }
