@@ -18,27 +18,38 @@
 
 ## Features 
 
-### Sass
+#### Sass
 * Compile Sass (Indented Version) files into CSS.
 * AutoPrefixing the output.
 * Minyfing the output.
 
-### JS
+#### JS
 * Minifying JS files.
 * Writing Source Map.
 
-### HTML
+#### HTML
 * Minifying the HTML files.
 
-### Images
+#### Images
 * Minifying Images ([imagemin](https://www.npmjs.com/package/gulp-imagemin))
 
-### Other
+#### Other
 * Browser Reload ([Browser-Sync](https://www.npmjs.com/package/browser-sync))
 
 ## Using
 
-> <h4><span style="color: #FED218;">npm</span> start</h4>
+1. Open Terminal or Command Prompt in downloaded project directory.
+
+2. Install Node Modules by typing : 
+
+    npm install
+
+3. Start actions by typing : 
+
+    npm start
+
+4. Enjoy :100:
+
 
 ## License 
 

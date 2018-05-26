@@ -1,2 +1,7 @@
+# Remove node modules directory 
+
 node_modules/*
+
+# Remove dist directory
+
 dist/*
