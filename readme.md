@@ -42,11 +42,11 @@
 
 2. Install Node Modules by typing : 
 
-    npm install
+ :arrow_right_hook: `npm install`
 
 3. Start actions by typing : 
 
-    npm start
+ :arrow_right_hook: `npm start`
 
 4. Enjoy :100:
 
